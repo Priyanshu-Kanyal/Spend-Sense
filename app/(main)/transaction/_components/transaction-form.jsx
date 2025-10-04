@@ -89,8 +89,7 @@ export function AddTransactionForm({
     };
 
     if (editMode) {
-      transactionFn(editId, formData);
-    } else {
+   // Receipt Scanner removed as requested
       transactionFn(formData);
     }
   };
@@ -143,8 +142,7 @@ export function AddTransactionForm({
         </Button>
       </div>
 
-      {/* Receipt Scanner - Only show in create mode */}
-      {!editMode && <ReceiptScanner onScanComplete={handleScanComplete} />}
+      // Receipt Scanner removed as requested
 
       {/* Type */}
       <div className="space-y-2">
